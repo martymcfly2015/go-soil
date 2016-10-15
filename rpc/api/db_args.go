@@ -19,8 +19,8 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rpc/shared"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/rpc/shared"
 )
 
 type DbArgs struct {

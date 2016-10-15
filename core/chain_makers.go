@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/pow"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/core/state"
+	"github.com/martymcfly2015/go-ethereum/core/types"
+	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-ethereum/event"
+	"github.com/martymcfly2015/go-ethereum/pow"
 )
 
 // FakePow is a non-validating proof of work implementation.

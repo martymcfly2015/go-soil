@@ -22,16 +22,16 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/logger/glog"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/pow"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/core"
+	"github.com/martymcfly2015/go-ethereum/core/state"
+	"github.com/martymcfly2015/go-ethereum/core/types"
+	"github.com/martymcfly2015/go-ethereum/eth/downloader"
+	"github.com/martymcfly2015/go-ethereum/event"
+	"github.com/martymcfly2015/go-ethereum/logger"
+	"github.com/martymcfly2015/go-ethereum/logger/glog"
+	"github.com/martymcfly2015/go-ethereum/params"
+	"github.com/martymcfly2015/go-ethereum/pow"
 )
 
 type Miner struct {

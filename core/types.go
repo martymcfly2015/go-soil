@@ -19,12 +19,12 @@ package core
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
+	"github.com/martymcfly2015/go-ethereum/accounts"
+	"github.com/martymcfly2015/go-ethereum/core/state"
+	"github.com/martymcfly2015/go-ethereum/core/types"
+	"github.com/martymcfly2015/go-ethereum/core/vm"
+	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-ethereum/event"
 )
 
 // Validator is an interface which defines the standard for block validation.

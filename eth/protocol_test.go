@@ -23,11 +23,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/core/types"
+	"github.com/martymcfly2015/go-ethereum/crypto"
+	"github.com/martymcfly2015/go-ethereum/p2p"
+	"github.com/martymcfly2015/go-ethereum/rlp"
 )
 
 func init() {

@@ -20,12 +20,12 @@ package state
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/logger/glog"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/core/vm"
+	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-ethereum/logger"
+	"github.com/martymcfly2015/go-ethereum/logger/glog"
+	"github.com/martymcfly2015/go-ethereum/trie"
 )
 
 // The starting nonce determines the default nonce when new accounts are being

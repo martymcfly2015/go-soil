@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-ethereum/rlp"
 )
 
 func TestNonInterfaceSlice(t *testing.T) {

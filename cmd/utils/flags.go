@@ -31,25 +31,25 @@ import (
 
 	"github.com/codegangsta/cli"
 	"github.com/ethereum/ethash"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/logger/glog"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc/api"
-	"github.com/ethereum/go-ethereum/rpc/codec"
-	"github.com/ethereum/go-ethereum/rpc/comms"
-	"github.com/ethereum/go-ethereum/rpc/shared"
-	"github.com/ethereum/go-ethereum/rpc/useragent"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-ethereum/accounts"
+	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-ethereum/core"
+	"github.com/martymcfly2015/go-ethereum/core/vm"
+	"github.com/martymcfly2015/go-ethereum/crypto"
+	"github.com/martymcfly2015/go-ethereum/eth"
+	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-ethereum/event"
+	"github.com/martymcfly2015/go-ethereum/logger"
+	"github.com/martymcfly2015/go-ethereum/logger/glog"
+	"github.com/martymcfly2015/go-ethereum/metrics"
+	"github.com/martymcfly2015/go-ethereum/p2p/nat"
+	"github.com/martymcfly2015/go-ethereum/params"
+	"github.com/martymcfly2015/go-ethereum/rpc/api"
+	"github.com/martymcfly2015/go-ethereum/rpc/codec"
+	"github.com/martymcfly2015/go-ethereum/rpc/comms"
+	"github.com/martymcfly2015/go-ethereum/rpc/shared"
+	"github.com/martymcfly2015/go-ethereum/rpc/useragent"
+	"github.com/martymcfly2015/go-ethereum/xeth"
 )
 
 func init() {
@@ -268,7 +268,7 @@ var (
 	RPCPortFlag = cli.IntFlag{
 		Name:  "rpcport",
 		Usage: "HTTP-RPC server listening port",
-		Value: 8545,
+		Value: 39421,
 	}
 	RPCCORSDomainFlag = cli.StringFlag{
 		Name:  "rpccorsdomain",
@@ -595,7 +595,7 @@ func IpcSocketPath(ctx *cli.Context) (ipcpath string) {
 	} else {
 		ipcpath = common.DefaultIpcPath()
 		if ctx.GlobalIsSet(DataDirFlag.Name) {
-			ipcpath = filepath.Join(ctx.GlobalString(DataDirFlag.Name), "geth.ipc")
+			ipcpath = filepath.Join(ctx.GlobalString(DataDirFlag.Name), "gsoil.ipc")
 		}
 		if ctx.GlobalIsSet(IPCPathFlag.Name) {
 			ipcpath = ctx.GlobalString(IPCPathFlag.Name)

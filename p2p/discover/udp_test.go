@@ -34,8 +34,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/logger"
+	"github.com/martymcfly2015/go-ethereum/crypto"
+	"github.com/martymcfly2015/go-ethereum/logger"
 )
 
 func init() {
