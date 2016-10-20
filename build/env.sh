@@ -14,7 +14,7 @@ ethdir="$workspace/src/github.com/martymcfly2015"
 if [ ! -L "$ethdir/go-soil" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. go-ethereum
+    ln -s ../../../../../. go-soil
     cd "$root"
 fi
 
