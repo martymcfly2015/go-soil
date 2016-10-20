@@ -309,6 +309,16 @@ func calcDifficultyHomestead(time, parentTime uint64, parentNumber, parentDiff *
 }
 
 func calcDifficultyFrontier(time, parentTime uint64, parentNumber, parentDiff *big.Int) *big.Int {
+
+	//HardFork
+	if parentNumber.Cmp(params.HardFork2) < 0 {
+	params.DurationLimit = big.NewInt(13)		
+	} else if  (parentNumber.Cmp(params.HardFork2) > -1) &&  (parentNumber.Cmp(params.HardFork3) < 0) {
+		params.DurationLimit =  big.NewInt(60)
+	} else {
+		params.DurationLimit =  big.NewInt(13)
+	}
+	
 	diff := new(big.Int)
 	adjust := new(big.Int).Div(parentDiff, params.DifficultyBoundDivisor)
 	bigTime := new(big.Int)

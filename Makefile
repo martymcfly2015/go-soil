@@ -2,110 +2,110 @@
 # with Go source code. If you know what GOPATH is then you probably
 # don't need to bother with make.
 
-.PHONY: geth geth-cross evm all test travis-test-with-coverage xgo clean
-.PHONY: geth-linux geth-linux-arm geth-linux-386 geth-linux-amd64
-.PHONY: geth-darwin geth-darwin-386 geth-darwin-amd64
-.PHONY: geth-windows geth-windows-386 geth-windows-amd64
-.PHONY: geth-android geth-android-16 geth-android-21
+.PHONY: gsoil gsoil-cross evm all test travis-test-with-coverage xgo clean
+.PHONY: gsoil-linux gsoil-linux-arm gsoil-linux-386 gsoil-linux-amd64
+.PHONY: gsoil-darwin gsoil-darwin-386 gsoil-darwin-amd64
+.PHONY: gsoil-windows gsoil-windows-386 gsoil-windows-amd64
+.PHONY: gsoil-android gsoil-android-16 gsoil-android-21
 
 GOBIN = build/bin
 
 MODE ?= default
 GO ?= latest
 
-geth:
-	build/env.sh go install -v $(shell build/flags.sh) ./cmd/geth
+gsoil:
+	build/env.sh go install -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/geth\" to launch geth."
+	@echo "Run \"$(GOBIN)/gsoil\" to launch gsoil."
 
-geth-cross: geth-linux geth-darwin geth-windows geth-android
+gsoil-cross: gsoil-linux gsoil-darwin gsoil-windows gsoil-android
 	@echo "Full cross compilation done:"
-	@ls -l $(GOBIN)/geth-*
+	@ls -l $(GOBIN)/gsoil-*
 
-geth-linux: xgo geth-linux-arm geth-linux-386 geth-linux-amd64
+gsoil-linux: xgo gsoil-linux-arm gsoil-linux-386 gsoil-linux-amd64
 	@echo "Linux cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-*
+	@ls -l $(GOBIN)/gsoil-linux-*
 
-geth-linux-386: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/386 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-386: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/386 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux 386 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep 386
+	@ls -l $(GOBIN)/gsoil-linux-* | grep 386
 
-geth-linux-amd64: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/amd64 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-amd64: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/amd64 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux amd64 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep amd64
+	@ls -l $(GOBIN)/gsoil-linux-* | grep amd64
 
-geth-linux-arm: geth-linux-arm-5 geth-linux-arm-6 geth-linux-arm-7 geth-linux-arm64
+gsoil-linux-arm: gsoil-linux-arm-5 gsoil-linux-arm-6 gsoil-linux-arm-7 gsoil-linux-arm64
 	@echo "Linux ARM cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep arm
+	@ls -l $(GOBIN)/gsoil-linux-* | grep arm
 
-geth-linux-arm-5: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-5 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-arm-5: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-5 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux ARMv5 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep arm-5
+	@ls -l $(GOBIN)/gsoil-linux-* | grep arm-5
 
-geth-linux-arm-6: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-6 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-arm-6: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-6 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux ARMv6 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep arm-6
+	@ls -l $(GOBIN)/gsoil-linux-* | grep arm-6
 
-geth-linux-arm-7: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-7 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-arm-7: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm-7 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux ARMv7 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep arm-7
+	@ls -l $(GOBIN)/gsoil-linux-* | grep arm-7
 
-geth-linux-arm64: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm64 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-linux-arm64: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=linux/arm64 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Linux ARM64 cross compilation done:"
-	@ls -l $(GOBIN)/geth-linux-* | grep arm64
+	@ls -l $(GOBIN)/gsoil-linux-* | grep arm64
 
-geth-darwin: geth-darwin-386 geth-darwin-amd64
+gsoil-darwin: gsoil-darwin-386 gsoil-darwin-amd64
 	@echo "Darwin cross compilation done:"
-	@ls -l $(GOBIN)/geth-darwin-*
+	@ls -l $(GOBIN)/gsoil-darwin-*
 
-geth-darwin-386: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=darwin/386 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-darwin-386: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=darwin/386 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Darwin 386 cross compilation done:"
-	@ls -l $(GOBIN)/geth-darwin-* | grep 386
+	@ls -l $(GOBIN)/gsoil-darwin-* | grep 386
 
-geth-darwin-amd64: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=darwin/amd64 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-darwin-amd64: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=darwin/amd64 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Darwin amd64 cross compilation done:"
-	@ls -l $(GOBIN)/geth-darwin-* | grep amd64
+	@ls -l $(GOBIN)/gsoil-darwin-* | grep amd64
 
-geth-windows: xgo geth-windows-386 geth-windows-amd64
+gsoil-windows: xgo gsoil-windows-386 gsoil-windows-amd64
 	@echo "Windows cross compilation done:"
-	@ls -l $(GOBIN)/geth-windows-*
+	@ls -l $(GOBIN)/gsoil-windows-*
 
-geth-windows-386: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=windows/386 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-windows-386: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=windows/386 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Windows 386 cross compilation done:"
-	@ls -l $(GOBIN)/geth-windows-* | grep 386
+	@ls -l $(GOBIN)/gsoil-windows-* | grep 386
 
-geth-windows-amd64: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=windows/amd64 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-windows-amd64: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=windows/amd64 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Windows amd64 cross compilation done:"
-	@ls -l $(GOBIN)/geth-windows-* | grep amd64
+	@ls -l $(GOBIN)/gsoil-windows-* | grep amd64
 
-geth-android: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=android/* -v $(shell build/flags.sh) ./cmd/geth
+gsoil-android: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=android/* -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "Android cross compilation done:"
-	@ls -l $(GOBIN)/geth-android-*
+	@ls -l $(GOBIN)/gsoil-android-*
 
-geth-ios: geth-ios-arm-7 geth-ios-arm64
+gsoil-ios: gsoil-ios-arm-7 gsoil-ios-arm64
 	@echo "iOS cross compilation done:"
-	@ls -l $(GOBIN)/geth-ios-*
+	@ls -l $(GOBIN)/gsoil-ios-*
 
-geth-ios-arm-7: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=ios/arm-7 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-ios-arm-7: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=ios/arm-7 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "iOS ARMv7 cross compilation done:"
-	@ls -l $(GOBIN)/geth-ios-* | grep arm-7
+	@ls -l $(GOBIN)/gsoil-ios-* | grep arm-7
 
-geth-ios-arm64: xgo
-	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=ios-7.0/arm64 -v $(shell build/flags.sh) ./cmd/geth
+gsoil-ios-arm64: xgo
+	build/env.sh $(GOBIN)/xgo --go=$(GO) --buildmode=$(MODE) --dest=$(GOBIN) --targets=ios-7.0/arm64 -v $(shell build/flags.sh) ./cmd/gsoil
 	@echo "iOS ARM64 cross compilation done:"
-	@ls -l $(GOBIN)/geth-ios-* | grep arm64
+	@ls -l $(GOBIN)/gsoil-ios-* | grep arm64
 
 evm:
 	build/env.sh $(GOROOT)/bin/go install -v $(shell build/flags.sh) ./cmd/evm
