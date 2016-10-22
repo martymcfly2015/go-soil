@@ -47,11 +47,11 @@ import (
 )
 
 const (
-	ClientIdentifier = "Gsoil"
-	Version          = "1.3.5"
+	ClientIdentifier = "Gsoil_MMF"
+	Version          = "1.4.1"
 	VersionMajor     = 1
-	VersionMinor     = 3
-	VersionPatch     = 5
+	VersionMinor     = 4
+	VersionPatch     = 1
 )
 
 var (
