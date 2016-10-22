@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/martymcfly2015/go-ethereum/logger"
+	"github.com/martymcfly2015/go-soil/logger"
 )
 
 func testErrors() *Errors {

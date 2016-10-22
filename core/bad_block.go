@@ -22,11 +22,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/rlp"
 )
 
 // DisabledBadBlockReporting can be set to prevent blocks being reported.

@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/crypto/sha3"
-	"github.com/martymcfly2015/go-ethereum/p2p/discover"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/crypto/sha3"
+	"github.com/martymcfly2015/go-soil/p2p/discover"
 )
 
 func init() {

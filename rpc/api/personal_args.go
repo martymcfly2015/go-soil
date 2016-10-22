@@ -19,7 +19,7 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
 )
 
 type NewAccountArgs struct {

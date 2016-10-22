@@ -23,7 +23,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-soil/common"
 )
 
 const solcVersion = "0.1.1"

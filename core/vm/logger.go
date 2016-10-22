@@ -21,7 +21,7 @@ import (
 	"os"
 	"unicode"
 
-	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-soil/common"
 )
 
 // StdErrFormat formats a slice of StructLogs to human readable format

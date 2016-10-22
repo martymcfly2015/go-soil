@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/crypto/randentropy"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/crypto/randentropy"
 )
 
 func TestKeyStorePlain(t *testing.T) {

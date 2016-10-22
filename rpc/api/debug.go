@@ -22,14 +22,14 @@ import (
 	"time"
 
 	"github.com/ethereum/ethash"
-	"github.com/martymcfly2015/go-ethereum/core"
-	"github.com/martymcfly2015/go-ethereum/core/state"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
-	"github.com/martymcfly2015/go-ethereum/eth"
-	"github.com/martymcfly2015/go-ethereum/rlp"
-	"github.com/martymcfly2015/go-ethereum/rpc/codec"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
-	"github.com/martymcfly2015/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-soil/core"
+	"github.com/martymcfly2015/go-soil/core/state"
+	"github.com/martymcfly2015/go-soil/core/vm"
+	"github.com/martymcfly2015/go-soil/eth"
+	"github.com/martymcfly2015/go-soil/rlp"
+	"github.com/martymcfly2015/go-soil/rpc/codec"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
+	"github.com/martymcfly2015/go-soil/xeth"
 	"github.com/rcrowley/go-metrics"
 )
 

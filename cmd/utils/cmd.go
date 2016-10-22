@@ -26,13 +26,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/eth"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/eth"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/rlp"
 	"github.com/peterh/liner"
 )
 

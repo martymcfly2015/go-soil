@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-soil/common"
 )
 
 func TestSet(t *testing.T) {

@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/martymcfly2015/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-soil/rlp"
 )
 
 // Value can hold values of certain basic types and provides ways to

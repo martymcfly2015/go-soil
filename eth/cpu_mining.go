@@ -22,8 +22,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
 )
 
 const disabledInfo = "Set GO_OPENCL and re-build to enable."

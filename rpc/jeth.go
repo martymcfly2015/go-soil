@@ -20,14 +20,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/martymcfly2015/go-ethereum/cmd/utils"
-	"github.com/martymcfly2015/go-ethereum/jsre"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/rpc/comms"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
-	"github.com/martymcfly2015/go-ethereum/rpc/useragent"
-	"github.com/martymcfly2015/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-soil/cmd/utils"
+	"github.com/martymcfly2015/go-soil/jsre"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/rpc/comms"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
+	"github.com/martymcfly2015/go-soil/rpc/useragent"
+	"github.com/martymcfly2015/go-soil/xeth"
 
 	"github.com/robertkrimen/otto"
 )

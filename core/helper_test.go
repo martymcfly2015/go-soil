@@ -20,11 +20,11 @@ import (
 	"container/list"
 	"fmt"
 
-	"github.com/martymcfly2015/go-ethereum/core/types"
+	"github.com/martymcfly2015/go-soil/core/types"
 	// "github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/martymcfly2015/go-ethereum/ethdb"
-	"github.com/martymcfly2015/go-ethereum/event"
+	"github.com/martymcfly2015/go-soil/ethdb"
+	"github.com/martymcfly2015/go-soil/event"
 )
 
 // Implement our EthTest Manager

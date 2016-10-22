@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/martymcfly2015/go-ethereum/p2p/discover"
+	"github.com/martymcfly2015/go-soil/p2p/discover"
 )
 
 func init() {

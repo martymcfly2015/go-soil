@@ -3,14 +3,13 @@ package core
 import (
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/core/state"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/params"	
-	
+	"github.com/martymcfly2015/go-soil/core/state"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/core/vm"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/params"
 )
 
 var (
@@ -95,13 +94,13 @@ func AccumulateRewards(statedb *state.StateDB, header *types.Header, uncles []*t
 	//HardFork
 	var pn = header.Number
 	if pn.Cmp(params.HardFork1) < 0 {
-		BlockReward=big.NewInt(8e+18)
-	} else if (pn.Cmp(params.HardFork1) > -1) &&  (pn.Cmp(params.HardFork3) < 0) {
-		BlockReward=big.NewInt(4e+18)
+		BlockReward = big.NewInt(8e+18)
+	} else if (pn.Cmp(params.HardFork1) > -1) && (pn.Cmp(params.HardFork3) < 0) {
+		BlockReward = big.NewInt(4e+18)
 	} else {
-		BlockReward=big.NewInt(1e+18)
+		BlockReward = big.NewInt(1e+18)
 	}
-	//		
+	//
 	reward := new(big.Int).Set(BlockReward)
 	r := new(big.Int)
 	for _, uncle := range uncles {

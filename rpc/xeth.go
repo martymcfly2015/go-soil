@@ -23,8 +23,8 @@ import (
 	"reflect"
 	"sync/atomic"
 
-	"github.com/martymcfly2015/go-ethereum/rpc/comms"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
+	"github.com/martymcfly2015/go-soil/rpc/comms"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
 )
 
 // Xeth is a native API interface to a remote node.

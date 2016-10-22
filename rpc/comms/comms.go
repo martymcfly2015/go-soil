@@ -25,10 +25,10 @@ import (
 
 	"strconv"
 
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/rpc/codec"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/rpc/codec"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
 )
 
 const (

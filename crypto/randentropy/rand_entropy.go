@@ -20,7 +20,7 @@ import (
 	crand "crypto/rand"
 	"io"
 
-	"github.com/martymcfly2015/go-ethereum/crypto/sha3"
+	"github.com/martymcfly2015/go-soil/crypto/sha3"
 )
 
 var Reader io.Reader = &randEntropy{}

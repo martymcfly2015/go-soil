@@ -21,13 +21,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/crypto/ecies"
-	"github.com/martymcfly2015/go-ethereum/event/filter"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/p2p"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/crypto/ecies"
+	"github.com/martymcfly2015/go-soil/event/filter"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/p2p"
 	"gopkg.in/fatih/set.v0"
 )
 

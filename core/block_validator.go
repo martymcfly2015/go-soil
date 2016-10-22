@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/state"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/logger/glog"
-	"github.com/martymcfly2015/go-ethereum/params"
-	"github.com/martymcfly2015/go-ethereum/pow"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/state"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/logger/glog"
+	"github.com/martymcfly2015/go-soil/params"
+	"github.com/martymcfly2015/go-soil/pow"
 	"gopkg.in/fatih/set.v0"
 )
 
@@ -312,13 +312,13 @@ func calcDifficultyFrontier(time, parentTime uint64, parentNumber, parentDiff *b
 
 	//HardFork
 	if parentNumber.Cmp(params.HardFork2) < 0 {
-	params.DurationLimit = big.NewInt(13)		
-	} else if  (parentNumber.Cmp(params.HardFork2) > -1) &&  (parentNumber.Cmp(params.HardFork3) < 0) {
-		params.DurationLimit =  big.NewInt(60)
+		params.DurationLimit = big.NewInt(13)
+	} else if (parentNumber.Cmp(params.HardFork2) > -1) && (parentNumber.Cmp(params.HardFork3) < 0) {
+		params.DurationLimit = big.NewInt(60)
 	} else {
-		params.DurationLimit =  big.NewInt(13)
+		params.DurationLimit = big.NewInt(13)
 	}
-	
+
 	diff := new(big.Int)
 	adjust := new(big.Int).Div(parentDiff, params.DifficultyBoundDivisor)
 	bigTime := new(big.Int)

@@ -23,9 +23,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/martymcfly2015/go-ethereum/rpc/codec"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
-	"github.com/martymcfly2015/go-ethereum/rpc/useragent"
+	"github.com/martymcfly2015/go-soil/rpc/codec"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
+	"github.com/martymcfly2015/go-soil/rpc/useragent"
 )
 
 func newIpcClient(cfg IpcConfig, codec codec.Codec) (*ipcClient, error) {

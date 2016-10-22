@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/state"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/state"
+	"github.com/martymcfly2015/go-soil/core/vm"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/ethdb"
 )
 
 // Config is a basic type specifing certain configuration flags for running

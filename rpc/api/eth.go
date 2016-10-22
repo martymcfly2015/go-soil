@@ -23,13 +23,13 @@ import (
 
 	"fmt"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/common/natspec"
-	"github.com/martymcfly2015/go-ethereum/eth"
-	"github.com/martymcfly2015/go-ethereum/rlp"
-	"github.com/martymcfly2015/go-ethereum/rpc/codec"
-	"github.com/martymcfly2015/go-ethereum/rpc/shared"
-	"github.com/martymcfly2015/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/common/natspec"
+	"github.com/martymcfly2015/go-soil/eth"
+	"github.com/martymcfly2015/go-soil/rlp"
+	"github.com/martymcfly2015/go-soil/rpc/codec"
+	"github.com/martymcfly2015/go-soil/rpc/shared"
+	"github.com/martymcfly2015/go-soil/xeth"
 	"gopkg.in/fatih/set.v0"
 )
 

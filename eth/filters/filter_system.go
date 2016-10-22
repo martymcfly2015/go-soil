@@ -22,9 +22,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/core"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
-	"github.com/martymcfly2015/go-ethereum/event"
+	"github.com/martymcfly2015/go-soil/core"
+	"github.com/martymcfly2015/go-soil/core/vm"
+	"github.com/martymcfly2015/go-soil/event"
 )
 
 // FilterSystem manages filters that filter specific events such as

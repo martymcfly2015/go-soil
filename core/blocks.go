@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/martymcfly2015/go-ethereum/common"
+import "github.com/martymcfly2015/go-soil/common"
 
 // Set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

@@ -20,10 +20,10 @@ import (
 	"bytes"
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/ethdb"
-	"github.com/martymcfly2015/go-ethereum/rlp"
-	"github.com/martymcfly2015/go-ethereum/trie"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/ethdb"
+	"github.com/martymcfly2015/go-soil/rlp"
+	"github.com/martymcfly2015/go-soil/trie"
 )
 
 // StateSync is the main state synchronisation scheduler, which provides yet the

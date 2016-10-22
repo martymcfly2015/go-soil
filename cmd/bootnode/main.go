@@ -26,10 +26,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/logger"
-	"github.com/martymcfly2015/go-ethereum/p2p/discover"
-	"github.com/martymcfly2015/go-ethereum/p2p/nat"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/logger"
+	"github.com/martymcfly2015/go-soil/p2p/discover"
+	"github.com/martymcfly2015/go-soil/p2p/nat"
 )
 
 func main() {

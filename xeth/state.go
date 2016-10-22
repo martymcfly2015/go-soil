@@ -17,8 +17,8 @@
 package xeth
 
 import (
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/state"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/state"
 )
 
 type State struct {

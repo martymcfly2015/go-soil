@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/accounts"
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/common/httpclient"
-	"github.com/martymcfly2015/go-ethereum/common/registrar"
-	"github.com/martymcfly2015/go-ethereum/core"
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/eth"
-	"github.com/martymcfly2015/go-ethereum/ethdb"
-	xe "github.com/martymcfly2015/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-soil/accounts"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/common/httpclient"
+	"github.com/martymcfly2015/go-soil/common/registrar"
+	"github.com/martymcfly2015/go-soil/core"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/eth"
+	"github.com/martymcfly2015/go-soil/ethdb"
+	xe "github.com/martymcfly2015/go-soil/xeth"
 )
 
 const (

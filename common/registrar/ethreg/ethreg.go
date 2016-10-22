@@ -19,8 +19,8 @@ package ethreg
 import (
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/common/registrar"
-	"github.com/martymcfly2015/go-ethereum/xeth"
+	"github.com/martymcfly2015/go-soil/common/registrar"
+	"github.com/martymcfly2015/go-soil/xeth"
 )
 
 // implements a versioned Registrar on an archiving full node

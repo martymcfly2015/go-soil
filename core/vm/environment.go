@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/common"
+	"github.com/martymcfly2015/go-soil/common"
 )
 
 // Environment is is required by the virtual machine to get information from

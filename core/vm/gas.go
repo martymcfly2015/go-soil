@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/params"
+	"github.com/martymcfly2015/go-soil/params"
 )
 
 var (

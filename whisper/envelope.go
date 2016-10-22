@@ -25,10 +25,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/crypto/ecies"
-	"github.com/martymcfly2015/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/crypto/ecies"
+	"github.com/martymcfly2015/go-soil/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

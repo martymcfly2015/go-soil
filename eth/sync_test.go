@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/p2p"
-	"github.com/martymcfly2015/go-ethereum/p2p/discover"
+	"github.com/martymcfly2015/go-soil/p2p"
+	"github.com/martymcfly2015/go-soil/p2p/discover"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

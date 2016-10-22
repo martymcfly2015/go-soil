@@ -19,9 +19,9 @@ package core
 import (
 	"math/big"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/core/vm"
 )
 
 // TxPreEvent is posted when a transaction enters the transaction pool.

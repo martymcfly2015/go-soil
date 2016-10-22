@@ -22,7 +22,7 @@ import (
 	"io"
 
 	"github.com/codegangsta/cli"
-	"github.com/martymcfly2015/go-ethereum/cmd/utils"
+	"github.com/martymcfly2015/go-soil/cmd/utils"
 )
 
 // AppHelpTemplate is the test template for the default, global app help topic.

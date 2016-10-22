@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/core/state"
-	"github.com/martymcfly2015/go-ethereum/core/types"
-	"github.com/martymcfly2015/go-ethereum/core/vm"
-	"github.com/martymcfly2015/go-ethereum/ethdb"
-	"github.com/martymcfly2015/go-ethereum/event"
-	"github.com/martymcfly2015/go-ethereum/pow/ezp"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/core/state"
+	"github.com/martymcfly2015/go-soil/core/types"
+	"github.com/martymcfly2015/go-soil/core/vm"
+	"github.com/martymcfly2015/go-soil/ethdb"
+	"github.com/martymcfly2015/go-soil/event"
+	"github.com/martymcfly2015/go-soil/pow/ezp"
 )
 
 func proc() (Validator, *BlockChain) {

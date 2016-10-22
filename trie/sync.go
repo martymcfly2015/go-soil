@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/martymcfly2015/go-ethereum/common"
-	"github.com/martymcfly2015/go-ethereum/ethdb"
+	"github.com/martymcfly2015/go-soil/common"
+	"github.com/martymcfly2015/go-soil/ethdb"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

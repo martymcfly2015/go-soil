@@ -35,12 +35,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/martymcfly2015/go-ethereum/crypto"
-	"github.com/martymcfly2015/go-ethereum/crypto/ecies"
-	"github.com/martymcfly2015/go-ethereum/crypto/secp256k1"
-	"github.com/martymcfly2015/go-ethereum/crypto/sha3"
-	"github.com/martymcfly2015/go-ethereum/p2p/discover"
-	"github.com/martymcfly2015/go-ethereum/rlp"
+	"github.com/martymcfly2015/go-soil/crypto"
+	"github.com/martymcfly2015/go-soil/crypto/ecies"
+	"github.com/martymcfly2015/go-soil/crypto/secp256k1"
+	"github.com/martymcfly2015/go-soil/crypto/sha3"
+	"github.com/martymcfly2015/go-soil/p2p/discover"
+	"github.com/martymcfly2015/go-soil/rlp"
 )
 
 const (

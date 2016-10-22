@@ -26,7 +26,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/martymcfly2015/go-ethereum/core"
+	"github.com/martymcfly2015/go-soil/core"
 )
 
 var (
