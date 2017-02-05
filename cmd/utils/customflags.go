@@ -24,7 +24,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 )
 
 // Custom type which is registered in the flags library which cli uses for

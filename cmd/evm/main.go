@@ -24,7 +24,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 	"github.com/martymcfly2015/go-soil/cmd/utils"
 	"github.com/martymcfly2015/go-soil/common"
 	"github.com/martymcfly2015/go-soil/core"

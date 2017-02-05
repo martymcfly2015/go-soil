@@ -21,7 +21,7 @@ package main
 import (
 	"io"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 	"github.com/martymcfly2015/go-soil/cmd/utils"
 )
 

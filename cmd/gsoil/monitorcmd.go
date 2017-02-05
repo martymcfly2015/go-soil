@@ -25,13 +25,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 	"github.com/martymcfly2015/go-soil/cmd/utils"
 	"github.com/martymcfly2015/go-soil/common"
 	"github.com/martymcfly2015/go-soil/rpc"
 	"github.com/martymcfly2015/go-soil/rpc/codec"
 	"github.com/martymcfly2015/go-soil/rpc/comms"
-	"github.com/gizak/termui"
+	"gopkg.in/gizak/termui.v1"
 )
 
 var (
