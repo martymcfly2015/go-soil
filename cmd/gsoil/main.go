@@ -47,7 +47,7 @@ import (
 )
 
 const (
-	ClientIdentifier = "Gsoil_MMF_MN"
+	ClientIdentifier = "Gsoil_MMF"
 	Version          = "1.4.2"
 	VersionMajor     = 1
 	VersionMinor     = 4
