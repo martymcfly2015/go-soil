@@ -30,7 +30,7 @@ import (
 	"strconv"
 
 	"github.com/codegangsta/cli"
-	"github.com/ethereum/ethash"
+	"github.com/martymcfly2015/ethash"
 	"github.com/martymcfly2015/go-soil/accounts"
 	"github.com/martymcfly2015/go-soil/common"
 	"github.com/martymcfly2015/go-soil/core"

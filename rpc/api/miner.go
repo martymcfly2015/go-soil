@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/ethereum/ethash"
+	"github.com/martymcfly2015/ethash"
 	"github.com/martymcfly2015/go-soil/common"
 	"github.com/martymcfly2015/go-soil/eth"
 	"github.com/martymcfly2015/go-soil/rpc/codec"

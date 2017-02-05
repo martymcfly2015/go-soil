@@ -31,7 +31,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ethereum/ethash"
+	"github.com/martymcfly2015/ethash"
 	"github.com/martymcfly2015/go-soil/accounts"
 	"github.com/martymcfly2015/go-soil/common"
 	"github.com/martymcfly2015/go-soil/common/compiler"
@@ -69,16 +69,16 @@ var (
 	portInUseErrRE     = regexp.MustCompile("address already in use")
 
 	defaultBootNodes = []*discover.Node{
-	// ETH/DEV Go Bootnodes
-	discover.MustParseNode("enode://1366a1b1f2a4057892afd8066ce999cf622adb9d6ad08017ff6b34d3d651a01161ccaf8bfe355e27a7b94248982329091067149639af3bd65dfef5aac044aba0@40.112.185.197:39420"),
-	discover.MustParseNode("enode://36667a60f555c254957b56aca013b507bb9e2a2f7b2484be7c70471dee268492907a11ee00329af761574ae2be57562660b95738654a2ca96bcf8ae88974033f@51.15.130.241:39420"),
-	discover.MustParseNode("enode://77b71660f5cb025e337bfb9bebf0c71001849fab8786d7b13fe3e081841f35cbf463cfc46fd570ef09829553524806be76b051e4f16afa7daf77265eb9733335@192.241.129.165:39420"),
-	discover.MustParseNode("enode://aa7b0925c125fa7b8ff4f175f7118d60b7a261e630b4af6113b52a05c2571ea47fd13e3591de840a9e140686fb1cf786744fb223fdacbd79cf061bd401234ca1@47.31.63.209:39420"),
-	discover.MustParseNode("enode://ed65072f342efe1e95b61b6544a7f2a64fceeab4a448ecd56c671015c7ee7721f5e919adf00e63111636136cc36ed1128b1ae2e6da98b52f520404cf3e9284b4@85.62.20.153:39420"),
-	discover.MustParseNode("enode://fc3c04d02c9a4758424d44199fdb3e0e087a45f165b4358890efe377364ae7c7764cbee84e8a5e37d4259aa239df8218854dca838c9c477a6250af88015c23c0@62.227.102.43:39420"),
-	discover.MustParseNode("enode://46fce6fdc328596df97c8c2e4d1744b9bf5bfd540ff8cf95e4880d797bd92e2cb52a81f38a9a49e51079f875c1adbdc2d4d6f503253e2d7188a494d421bd968b@178.62.133.174:39420"),
-	// ETH/DEV cpp-ethereum (poc-9.ethdev.com)
-	// discover.MustParseNode("enode://979b7fa28feeb35a4741660a16076f1943202cb72b6af70d327f053e248bab9ba81760f39d0701ef1d8f89cc1fbd2cacba0710a12cd5314d5e0c9021aa3637f9@5.1.83.226:30303"),
+		// ETH/DEV Go Bootnodes
+		discover.MustParseNode("enode://1366a1b1f2a4057892afd8066ce999cf622adb9d6ad08017ff6b34d3d651a01161ccaf8bfe355e27a7b94248982329091067149639af3bd65dfef5aac044aba0@40.112.185.197:39420"),
+		discover.MustParseNode("enode://36667a60f555c254957b56aca013b507bb9e2a2f7b2484be7c70471dee268492907a11ee00329af761574ae2be57562660b95738654a2ca96bcf8ae88974033f@51.15.130.241:39420"),
+		discover.MustParseNode("enode://77b71660f5cb025e337bfb9bebf0c71001849fab8786d7b13fe3e081841f35cbf463cfc46fd570ef09829553524806be76b051e4f16afa7daf77265eb9733335@192.241.129.165:39420"),
+		discover.MustParseNode("enode://aa7b0925c125fa7b8ff4f175f7118d60b7a261e630b4af6113b52a05c2571ea47fd13e3591de840a9e140686fb1cf786744fb223fdacbd79cf061bd401234ca1@47.31.63.209:39420"),
+		discover.MustParseNode("enode://ed65072f342efe1e95b61b6544a7f2a64fceeab4a448ecd56c671015c7ee7721f5e919adf00e63111636136cc36ed1128b1ae2e6da98b52f520404cf3e9284b4@85.62.20.153:39420"),
+		discover.MustParseNode("enode://fc3c04d02c9a4758424d44199fdb3e0e087a45f165b4358890efe377364ae7c7764cbee84e8a5e37d4259aa239df8218854dca838c9c477a6250af88015c23c0@62.227.102.43:39420"),
+		discover.MustParseNode("enode://46fce6fdc328596df97c8c2e4d1744b9bf5bfd540ff8cf95e4880d797bd92e2cb52a81f38a9a49e51079f875c1adbdc2d4d6f503253e2d7188a494d421bd968b@178.62.133.174:39420"),
+		// ETH/DEV cpp-ethereum (poc-9.ethdev.com)
+		// discover.MustParseNode("enode://979b7fa28feeb35a4741660a16076f1943202cb72b6af70d327f053e248bab9ba81760f39d0701ef1d8f89cc1fbd2cacba0710a12cd5314d5e0c9021aa3637f9@5.1.83.226:30303"),
 	}
 
 	defaultTestNetBootNodes = []*discover.Node{
