@@ -268,7 +268,7 @@ var (
 	RPCPortFlag = cli.IntFlag{
 		Name:  "rpcport",
 		Usage: "HTTP-RPC server listening port",
-		Value: 39421,
+		Value: 39342,
 	}
 	RPCCORSDomainFlag = cli.StringFlag{
 		Name:  "rpccorsdomain",
@@ -312,7 +312,7 @@ var (
 	ListenPortFlag = cli.IntFlag{
 		Name:  "port",
 		Usage: "Network listening port",
-		Value: 39420,
+		Value: 39340,
 	}
 	BootnodesFlag = cli.StringFlag{
 		Name:  "bootnodes",
