@@ -32,9 +32,10 @@ var (
 	TxDataZeroGas          = big.NewInt(4)      // Per byte of data attached to a transaction that equals zero. NOTE: Not payable on data of calls between transactions.
 	//DifficultyBoundDivisor = big.NewInt(2048)   // The bound divisor of the difficulty, used in the update calculations.
 	DifficultyBoundDivisor = big.NewInt(1024)
-	HardFork1              = big.NewInt(263708) // Hard fork block reward 8 to 4 SOIL
+	HardFork1              = big.NewInt(263708)	// Hard fork block reward 8 to 4 SOIL
 	HardFork2              = big.NewInt(320000) // Hard fork block time to 60 seconds
-	HardFork3              = big.NewInt(334000) // Hard fork block time to back to 15 seconds and block reward to 1 SOIL		
+	HardFork3              = big.NewInt(334000) // Hard fork block time to back to 15 seconds and block reward to 1 SOIL
+	HardFork4              = big.NewInt(2000100) // block reward to 3 SOIL		
 	QuadCoeffDiv           = big.NewInt(512)    // Divisor for the quadratic particle of the memory cost equation.
 	GenesisDifficulty      = big.NewInt(131072) // Difficulty of the Genesis block.
 	DurationLimit          = big.NewInt(13)     // The decision boundary on the blocktime duration used to determine whether difficulty should go up or not.
