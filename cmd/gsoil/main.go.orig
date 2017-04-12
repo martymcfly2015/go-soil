@@ -47,11 +47,19 @@ import (
 )
 
 const (
+<<<<<<< HEAD:cmd/gsoil/main.go
 	ClientIdentifier = "Gsoil_MMF"
-	Version          = "1.4.5"
+	Version          = "1.4.4"
 	VersionMajor     = 1
 	VersionMinor     = 4
-	VersionPatch     = 5
+	VersionPatch     = 4
+=======
+	ClientIdentifier = "Geth"
+	Version          = "1.3.6"
+	VersionMajor     = 1
+	VersionMinor     = 3
+	VersionPatch     = 6
+>>>>>>> remotes/upstream/release/1.3.6:cmd/geth/main.go
 )
 
 var (
